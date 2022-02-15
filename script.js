@@ -40,15 +40,17 @@ function fetch(method, url, callback) {
    const url = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json";
 
   const dataCrypto = (data => {
-    console.log(data);
-    Object.keys(data.usd).forEach((key, index) => {
-        // const optionValue = data.usd.key;
+
+    Object.keys(data.usd).forEach(key=> {
+        console.log(key, data.usd[key]);
+        const optionValue = data.usd[key];
         let opt = key;
         let element = document.createElement("option");
         element.textContent = opt;
-        element.setAttribute("value", index + 1); 
+        element.setAttribute("value", data.usd[key]); 
         getSelected.appendChild(element);
+        console.log(data.usd)
       })
+  
     })
-
 fetch("Get",url,dataCrypto)
