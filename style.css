@@ -3,3 +3,72 @@
     margin: 0;
     padding: 0;
 }
+body{
+
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width:50%;
+    margin: auto;
+    background-color: rgb(255, 245, 187);
+    border-radius: 8px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding: 80px;
+}
+
+.form-select-currancy{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width:400px;
+    align-items: center;
+    margin:auto;
+    border: 3px solid #fff;
+    padding: 25px;
+
+
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px 0;
+    letter-spacing: 5px;
+}
+label{
+    font-size: 18px;
+    text-align: start;
+    display: block;
+    font-weight: 600;
+    margin: 25px;
+}
+.coin-option{
+
+    border-radius: 6px;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.coin-option:focus{
+    border:2p solid rgb(219, 200, 92);
+    outline: none;
+
+}
+.btn{
+  
+    border-radius: 8px;
+    padding: 15px;
+    background-color: rgb(219, 200, 92);
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin: 30px;
+    width:100%;
+
+}
