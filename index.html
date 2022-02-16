@@ -12,19 +12,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav> 
+        <a href="index.html"> <img src="assets/logo.png" alt="logo"></a>
+        <ul>
+            <li><a href="#"> Trending</a></li>
+            <li><a href="#"> Rewards</a></li>
+            <li><a href="#"> Git Cards</a></li>
+        </ul>
+        <a href="#"  class="btn-start"> Get started </a>
+    </nav>
     <div class="container" id="container">
-        <h1> Welcome</h1>
+        <div class="row">
+           <div class="left-side">
+            <h1> Buy & sell Crypto in minutes </h1>
+            <p>The CryptoCoin Exchange is a safe and efficient 
+            cryptocurrency exchange. CryptoCoin philosophy is to
+             find the best available way to count your investments.</p>
+       
         <form method="get" action="" id ="crypto" class="form-select-currancy">
-            <label for="Currency">Select your Currency</label>
             <select name="Currency"  id="currency" class="coin-option" > 
                 <option value="none" selected disabled hidden>Select a Currency</option>
-
            </select>
-          
-           <button type="submit" id="btn" class="btn">Get Started</button>
+           <button type="submit" id="btn" class="btn-start">Get Started</button>
         </form> 
-
+        <p>The World's Leading Cryptocurrency Trading Platform </p>
+       </div>
+   <div class="images">
+       <img src="./assets/image.png" alt="crypto">  </div>    
     </div>
+ </div>
    
     <script src="fetch.js"></script>
     <script src="script.js"></script>
