@@ -51,6 +51,28 @@ function fetch(method, url, callback) {
         getSelected.appendChild(element);
         console.log(data.usd)
       })
-  
-    })
-fetch("Get",url,dataCrypto)
+    //   const currencyVal = window.localStorage.setItem("currency", data.usd);
+    //   console.log(currencyVal)
+     
+    function selectFun() {
+        const valOption = getSelected.options[getSelected.selectedIndex];
+        const re =document.getElementById('result');
+        re.value = valOption.value;
+    }
+    selectFun();
+
+
+})
+
+    const btn = document.getElementById('btn');
+    const frm = document.getElementById('crypto');
+    
+    // const formData =document.getElementById('crypto')[0];
+    // console.log(formData.elements['Currency'])
+    // // const btn = document.getElementById('btn');
+    // // form.addEventListener('submit', (e)=>{
+    // //   e.preventDefault();
+    // // })
+    
+   
+fetch("Get",url,dataCrypto);
