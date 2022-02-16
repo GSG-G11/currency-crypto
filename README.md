@@ -81,7 +81,6 @@ After making it to the main page the user search about a specific Cryptocurrency
 - Vanilla Javascript (JS)
 - Local Storage
 - Figma
-- npm modules
 
  
 
