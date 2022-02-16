@@ -4,30 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CurrencyCrypto - Get started</title>
+    <title>Currency Crypto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/1498978161610059268.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- header  -->
+    <nav> 
+        <a href="index.html"> <img src="assets/logo.png" alt="logo"></a>
+        <ul>
+            <li><a href="#"> Trending</a></li>
+            <li><a href="#"> Rewards</a></li>
+            <li><a href="#"> Git Cards</a></li>
+        </ul>
+        <a href="./crypto/crypto.html"  class="btn-start"> Get started </a>
+    </nav>
+    <!-- End Haeder -->
+    <!-- Content -->
     <div class="container" id="container">
-        <h1> Welcome</h1>
+        <div class="row">
+           <div class="left-side">
+            <h1> Buy & sell Crypto in minutes </h1>
+            <p>The CryptoCoin Exchange is a safe and efficient 
+            cryptocurrency exchange. CryptoCoin philosophy is to
+             find the best available way to count your investments.</p>
+       
         <form method="get" action="" id ="crypto" class="form-select-currancy">
-            <label for="Currency">Select your Currency</label>
             <select name="Currency"  id="currency" class="coin-option" > 
                 <option value="none" selected disabled hidden>Select a Currency</option>
-
            </select>
-          
-           <button type="submit" id="btn" class="btn">Get Started</button>
+           <button type="submit" id="btn" class="btn-start">Get Started</button>
         </form> 
-
+        <p>The World's Leading Cryptocurrency Trading Platform </p>
+       </div>
+   <div class="images">
+       <img src="./assets/image.png" alt="crypto">  </div>    
     </div>
+ </div>
+ <!-- End content -->
    
-    <script src="fetch.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>

@@ -11,17 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="../assets/1498978161610059268.svg" type="image/x-icon">
     <link rel="stylesheet" href="crypto.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="title" id="title">CurrencyCrypto</h1>
+    <nav> 
+      <a href="../index.html"> <img src="../assets/log.png" alt="logo"></a>
+      <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#"> About</a></li>
+          <li><a href="#"> Categories</a></li>
+          <li><a href="#"> Contact</a></li>
+      </ul>
+  </nav>
+  <section class="crytpo-sec">
+      <div class="rows">
+        <div class="titles">
+          <h1>Job Board for Developers,
+            Designers, and Marketers</h1>
+            <p>
+              Jobs is a curated job board of the best jobs for developers,
+               designers and marketers in the tech industry.
+            </p>
+        </div>
+       
+      </div>
 
-      <!-- desired currency search form -->
-      <form action="">
-        <input type="text" name="search" placeholder="Search.." />
-      </form>
+  </section>
+    <div class="container">
+      <!-- <h1 class="title" id="title">currency Crypto</h1> -->
+ <!-- desired currency search form -->
+ <form action="" class="frm">
+  <input type="text" name="search" placeholder="Search.." />
+  <a href="#" class="btn-search">Search</a>
+</form>
+    
       <!--start of data table -->
       <table id="data-crypto" class="data-crypto">
         <tr>
@@ -38,8 +61,6 @@
       <!--END of data table -->
     </div>
 
-    <script src="../fetch.js"></script>
-    <script src="crypto.js"></script>
-
+    <script src="./crypto.js"></script>
 </body>
 </html>

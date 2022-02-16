@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+:root{
+    --primaryColor:#FFA800;
+    --boxshadow: 0 2px 15px rgb(0 0 0 / 10%);
+    --transition: 0.5s
+}
 body{
-
     font-family: 'Roboto', sans-serif;
 }
 html{
@@ -16,20 +19,97 @@ html{
 .container{
     width:80%;
     margin:50px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap:80px;
+    align-items: center;
+}
+ul li a{
+    font-size:18px ;
+    color:rgb(70, 70, 70);
+}
+a{
+    text-decoration: none;
+    transition: var(--transition);
+}
+ul li a:hover{
+    color:var(--primaryColor);
+    font-weight: 500;
+}
+ul li a:hover{
+    color:var(--primaryColor);
+    font-weight: 500;
 
 }
+
+
+    .crytpo-sec{
+        background-color: #F5F8FA;
+        position: relative;
+    }
+    .rows{
+        width:80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .titles{
+        width: 50%;
+        margin:100px;
+        text-align: center;
+    }
+    .titles p{
+        margin: 35px 0;
+        line-height: 1.7;
+        color:rgb(83, 83, 83);
+    }
 h1{
-   font-family:  'Akaya Telivigala', cursive;
     font-size: 2.5rem;
 }
-.title{
 
+.frm{
+    width: 70%;
+    margin-top: -154px;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: var(--boxshadow);
+    z-index: 1000;
+    position: absolute;
+    transform: translateX(7%);
+}
+
+.btn-search{
+    width:15%;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: var(--primaryColor);
+    color:#fff
+
+}
+
+   
+.title{
     text-align: center;
     font-size: 25px;
     text-transform: uppercase;
-    letter-spacing: 5px
-
-    
+    letter-spacing: 5px  
 }
 .data-crypto{
     display: flex;
@@ -39,32 +119,25 @@ h1{
     border-radius: 4px;
     padding:25px;
     border: 1px solid #eee;
-    margin-top: 35px;
-
+    margin-top: 80px;
 }
 
  th{
     width:200px;
     text-transform: uppercase;
     vertical-align:middle;
-
-
 }
 .row{
     width:200px;
     border-bottom: 2px solid #eee;
     text-transform: capitalize;
     text-align: center;
-
-
 }
 .row td{
     height: 60px;
     border-top: 2px solid #eee;
-
 }
 .green{
-
     color:rgb(31, 212, 40)
 }
 .red{
@@ -76,10 +149,7 @@ h1{
 }
 input[type=text] {
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
     width: 100%;
-    box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
@@ -88,9 +158,12 @@ input[type=text] {
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
-    margin-top: 4rem;
-    max-width: 15rem;
-
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    width: 65%;
+  }
+  input[type=text]:focus{
+      outline: none;
   }
 
 @media screen and (max-width: 1000px) {
@@ -103,13 +176,67 @@ input[type=text] {
     .disapearin800{
         display:none;
     }
-}
+    nav ul{
+        display: none;
+    }
+   
+    nav::after{
+        font-family: "Font Awesome 5 Free";
+        content: "\f0c9";
+         font-weight: 900;
+         color:#000;
+         font-size: 18px;
+        
+    }
+    .rows{
+        width: 100%;
+    }
+    .frm{
+        width: 85%;
+        flex-direction: column;
+    }
+    input[type=text] {
+        width:100%;
+    }
+    .btn-search{
 
+        width:30%
+  
+}
+    
+}
 
 @media screen and (max-width: 600px) {
     .disapearin600{
         display:none;
     }
+    nav ul{
+        display: none;
+    }
+   
+    nav::after{
+        font-family: "Font Awesome 5 Free";
+        content: "\f0c9";
+         font-weight: 900;
+         color:#000;
+         font-size: 18px;
+        
+    }
+    .rows{
+        width: 100%;
+    }
+    .frm{
+        width: 85%;
+        flex-direction: column;
+    }
+    input[type=text] {
+        width:100%;
+    }
+    .btn-search{
+
+        width:30%
+  
+}
 }
 
 
@@ -118,4 +245,19 @@ input[type=text] {
     .disapearin500{
         display:none;
     }
+    .rows{
+        width: 100%;
+    }
+    .frm{
+        width: 85%;
+        flex-direction: column;
+    }
+    input[type=text] {
+        width:100%;
+    }
+    .btn-search{
+
+        width:35%
+  
+}
 }
