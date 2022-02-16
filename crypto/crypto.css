@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,6 +17,10 @@ html{
     width:80%;
     margin:50px auto;
 
+}
+h1{
+   font-family:  'Akaya Telivigala', cursive;
+    font-size: 2.5rem;
 }
 .title{
 
@@ -62,4 +69,53 @@ html{
 }
 .red{
     color:red
+}
+.symbol {
+    text-transform: uppercase;
+    color: grey;
+}
+input[type=text] {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    margin-top: 4rem;
+    max-width: 15rem;
+
+  }
+
+@media screen and (max-width: 1000px) {
+    .disapearin1000{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .disapearin800{
+        display:none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .disapearin600{
+        display:none;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .disapearin500{
+        display:none;
+    }
 }

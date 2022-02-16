@@ -1,52 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top Crypto</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="crypto.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="crypto.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1 class="title" id="title">  currency Crypto</h1>
-        <table id="data-crypto" class="data-crypto">
-            <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>price</th>
-                <th>24h%</th>
-                <th>7d</th>
-                <th>marketCap</th>
-                <th>volume</th>
-                <th>circulatingSupply</th>
-              </tr>
-              <tr class="row">
-                  <td class="col" id="num">1</td> 
-                  <td class="col" id="name">name    
-                  <span class="symbol-coin" id="symbol-coin">BTC </span></td>
-                  <td class="col red" id="price">25$</td>
-                  <td class="col green" id="hr">4.8%</td>
-                  <td class="col green" id="day">1.4%</td>
-                  <td class="col" id="market-cap">2536612.25$</td>
-                  <td class="col" id="volume">2536612.25$</td>
-                  <td class="col" id="circulating">12.566220  <span class="circulating-coin" id="circulating-coin">BTC </span></td>
-              </tr>
-              <tr class="row">
-                <td class="col" id="num">1</td> 
-                <td class="col" id="name">name    
-                <span class="symbol-coin" id="symbol-coin">BTC </span></td>
-                <td class="col red" id="price">25$</td>
-                <td class="col green" id="hr">4.8%</td>
-                <td class="col green" id="day">1.4%</td>
-                <td class="col" id="market-cap">2536612.25$</td>
-                <td class="col" id="volume">2536612.25$</td>
-                <td class="col" id="circulating">12.566220  <span class="circulating-coin" id="circulating-coin">BTC </span></td>
-            </tr>
-        </table>
+      <h1 class="title" id="title">currency Crypto</h1>
+
+      <!-- desired currency search form -->
+      <form action="">
+        <input type="text" name="search" placeholder="Search.." />
+      </form>
+      <!--start of data table -->
+      <table id="data-crypto" class="data-crypto">
+        <tr>
+          <th>No.</th>
+          <th>name</th>
+          <th>price</th>
+          <th>24h%</th>
+          <th class="disapearin500">7d</th>
+          <th class="disapearin600">marketCap</th>
+          <th class="disapearin800">volume</th>
+          <th class="disapearin1000">Circulating Supply</th>
+        </tr>
+      </table>
+      <!--END of data table -->
     </div>
 
     <script src="crypto.js"></script>
