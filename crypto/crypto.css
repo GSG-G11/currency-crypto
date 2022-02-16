@@ -100,7 +100,9 @@ h1{
     border-radius: 50px;
     text-decoration: none;
     background-color: var(--primaryColor);
-    color:#fff
+    color:#fff;
+    border: none;
+
 
 }
 
@@ -160,7 +162,7 @@ input[type=text] {
     padding: 12px 20px 12px 40px;
     border-radius: 50px;
     border: 1px solid #ccc;
-    width: 65%;
+    width: 6570%;
   }
   input[type=text]:focus{
       outline: none;
@@ -192,15 +194,15 @@ input[type=text] {
         width: 100%;
     }
     .frm{
-        width: 85%;
         flex-direction: column;
     }
     input[type=text] {
         width:100%;
     }
     .btn-search{
-
-        width:30%
+         
+        width:30%;
+        
   
 }
     
@@ -226,7 +228,6 @@ input[type=text] {
         width: 100%;
     }
     .frm{
-        width: 85%;
         flex-direction: column;
     }
     input[type=text] {
@@ -249,7 +250,6 @@ input[type=text] {
         width: 100%;
     }
     .frm{
-        width: 85%;
         flex-direction: column;
     }
     input[type=text] {
