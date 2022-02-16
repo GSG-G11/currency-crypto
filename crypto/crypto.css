@@ -194,7 +194,6 @@ input[type=text] {
         width: 100%;
     }
     .frm{
-        width: 85%;
         flex-direction: column;
     }
     input[type=text] {
