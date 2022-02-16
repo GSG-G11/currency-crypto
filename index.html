@@ -11,25 +11,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <div class="container" id="container">
         <h1> Welcome</h1>
-        <form class="form-select-currancy">
+        <form method="get" action="" id ="crypto" class="form-select-currancy">
             <label for="Currency">Select your Currency</label>
-            <select name="Currency"  id="Currency" class="coin-option">
-                <option value="1">Bitcoin</option>
-                <option value="2">Ethern</option>
-                <option value="3">Alice</option>
-            </select>
-            <button id="btn" class="btn">Get the Selected </button>
-        </form>
-
+            <select name="Currency"  id="currency" class="coin-option" > 
+               
+           </select>
+           <select name="Currency"  id="test" class="coin-option" > 
+               <option value="bb" >1</option>
+               <option value="nn">2</option>
+        </select>
+            <button type="submit" id="btn" class="btn">Get the Selected </button>
+        </form> 
+     <input id="result"> </input>
 
     </div>
-
-
-
-
-    <script src="./script.js"></script>
+   
+    <script src="script.js"></script>
 </body>
 </html>
