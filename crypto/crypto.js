@@ -5,7 +5,9 @@
 const formInput = document.querySelector("input");
 document.querySelector("form").onsubmit = (e) => e.prventDefault(); // Cancel the default action, if needed
 const top100 = "https://api.coincap.io/v2/assets";
-// const selectedCurruncy = Number(localStorage.getItem("curruncy")) || 1;
+const CurruncyValue = Number(localStorage.getItem("currencyValue")) || 1;
+const Curruncy = localStorage.getItem("currency") || "$";
+console.log(Curruncy);
 const table = document.querySelector("table");
 const tBody = document.querySelector("tbody");
 table.appendChild(tBody);
@@ -86,21 +88,21 @@ function parseDataToDom(apiData) {
     name.appendChild(symbol);
 
     let price = document.createElement("td");
-    price.textContent = Number(coin.priceUsd).toFixed(2);
+    price.textContent = (Number(coin.priceUsd)* CurruncyValue).toFixed(2) + " " + Curruncy;
 
     let cahngeIn24 = document.createElement("td");
     cahngeIn24.textContent = Number(coin.changePercent24Hr).toFixed(2) + "%";
 
     let changeIn7 = document.createElement("td");
-    changeIn7.textContent = Number(coin.vwap24Hr).toFixed(2);
+    changeIn7.textContent = (Number(coin.vwap24Hr) *CurruncyValue).toFixed(2);
 
 
     let marketCap = document.createElement("td");
-    marketCap.textContent = (Number(coin.marketCapUsd) / 1000000).toFixed(2) + "M";
+    marketCap.textContent = ((Number(coin.marketCapUsd) / 1000000) * CurruncyValue).toFixed(2) + "M";
     marketCap.className = "disapearin600";
 
     let volume = document.createElement("td");
-    volume.textContent = (Number(coin.volumeUsd24Hr)/ 1000000).toFixed(2) + "M";
+    volume.textContent = ((Number(coin.volumeUsd24Hr)/ 1000000)* CurruncyValue).toFixed(2)  + "M";
     volume.className = "disapearin800";
 
     let circulatingSupply = document.createElement("td");
